@@ -44,6 +44,7 @@
 		87D20A922C6E359600A5E8E3 /* MJPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D20A912C6E359600A5E8E3 /* MJPermenantThread.m */; };
 		87D20A992C6E492000A5E8E3 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D20A982C6E492000A5E8E3 /* GCDViewController.m */; };
 		87D5B56C2C80C4AB000F2A46 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5B56B2C80C4AB000F2A46 /* ImageTools.m */; };
+		87D5B5712C85F504000F2A46 /* SourceCodeAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5B5702C85F504000F2A46 /* SourceCodeAnalysisViewController.m */; };
 		87E9C07C2C35966900A6BF57 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E9C07B2C35966900A6BF57 /* DownloadViewController.m */; };
 		87E9C07F2C359A9F00A6BF57 /* DownloaderTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E9C07E2C359A9F00A6BF57 /* DownloaderTwo.m */; };
 /* End PBXBuildFile section */
@@ -123,6 +124,8 @@
 		87D20A982C6E492000A5E8E3 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		87D5B56A2C80C4AB000F2A46 /* ImageTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
 		87D5B56B2C80C4AB000F2A46 /* ImageTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
+		87D5B56F2C85F504000F2A46 /* SourceCodeAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceCodeAnalysisViewController.h; sourceTree = "<group>"; };
+		87D5B5702C85F504000F2A46 /* SourceCodeAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceCodeAnalysisViewController.m; sourceTree = "<group>"; };
 		87E9C07A2C35966900A6BF57 /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
 		87E9C07B2C35966900A6BF57 /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		87E9C07D2C359A9F00A6BF57 /* DownloaderTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloaderTwo.h; sourceTree = "<group>"; };
@@ -159,10 +162,10 @@
 		870A054A2C25C9570066158C /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				87D5B56D2C85F4A7000F2A46 /* RunLoop */,
 				87D5B5692C80C462000F2A46 /* 性能优化 */,
 				87B7ED9B2C7B244200CB69B6 /* 多线程 */,
 				87B7ED9A2C7B241800CB69B6 /* 内存管理 */,
-				87D20A8C2C6CF6DA00A5E8E3 /* PermenantThread */,
 				871118062C34503D004FECDC /* Downloader */,
 				871118022C344EC0004FECDC /* ShowWebView */,
 				870A05682C2B16C30066158C /* HttpRequest.swift */,
@@ -328,6 +331,24 @@
 			path = "性能优化";
 			sourceTree = "<group>";
 		};
+		87D5B56D2C85F4A7000F2A46 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				87D5B56E2C85F4D4000F2A46 /* 源码解析 */,
+				87D20A8C2C6CF6DA00A5E8E3 /* PermenantThread */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		87D5B56E2C85F4D4000F2A46 /* 源码解析 */ = {
+			isa = PBXGroup;
+			children = (
+				87D5B56F2C85F504000F2A46 /* SourceCodeAnalysisViewController.h */,
+				87D5B5702C85F504000F2A46 /* SourceCodeAnalysisViewController.m */,
+			);
+			path = "源码解析";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -413,6 +434,7 @@
 				87B7ED772C7AF9C800CB69B6 /* MutexDemo3.m in Sources */,
 				87B7ED322C7A136F00CB69B6 /* LocksViewController.m in Sources */,
 				87B7ED812C7AF9C800CB69B6 /* MutexDemo2.m in Sources */,
+				87D5B5712C85F504000F2A46 /* SourceCodeAnalysisViewController.m in Sources */,
 				870A054D2C25C9570066158C /* AppDelegate.m in Sources */,
 				87D5B56C2C80C4AB000F2A46 /* ImageTools.m in Sources */,
 				87B7ED7D2C7AF9C800CB69B6 /* NSLockDemo.m in Sources */,
